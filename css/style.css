@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.navbar{
+    background-color: #e3ecf2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    list-style-type: none;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+}
+
+.cta-btn{
+    background-color: #002594;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px #f9c01e;
+    transition: 1s;
+}
+
+.cta-btn:hover{
+    background-color: #f9c01e;
+    color: #000;
+    transition: 1s;
+}
+
+.page-title{
+    background-color: #002594;
+    color: #fff;
+    padding: 100px 150px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+
+.page-title-bar{
+    background-color: #f9c01e;
+    width: 4px;
+    height: 70px;
+}
+
+.dashboard{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.breadcrums{
+    padding: 20px 150px;
+}
+
+.breadcrums a{
+    color: #000;
+    text-decoration: none;
+}
+
+.divider{
+    margin-top: 20px;
+}
+
+.register{
+    display: flex;
+    padding: 20px 150px;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.login-form{
+    box-shadow: 0.1px 2px 3px 4px rgb(227, 225, 225);
+    padding: 20px 20px 40px 20px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    font-style: italic;
+    font-size: 13px;
+}
+.form-field input{
+    padding: 10px 10px;
+    margin: 10px 0;
+}
+
+form .submit{
+    width: 100%;
+    background-color: #f9c01e;
+    color: black;
+    border: none;
+    padding: 14px 0;
+    margin: 5px 0;
+}
+
+.register-form {
+    box-shadow: 0.1px 2px 3px 4px rgb(227, 225, 225);
+    padding: 20px 20px 40px 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-footer {
+    background-color: #1b1a1a;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.s__footer {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.sub-footer h3 {
+    margin-bottom: 10px;
+}
+.sub-footer a {
+    margin-bottom: 10px;
+}
+
+.footer-list {
+    list-style-type: none;
+}
+
+.footer-list li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    min-height: 60px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

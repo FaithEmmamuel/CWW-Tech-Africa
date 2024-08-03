@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/prog.css" />
+    <title>CWW Tech Login Page</title>
+
+    <!-- <script>
+function toggleParagraph(paragraphId) {
+    const paragraph = document.getElementById(paragraphId);
+    
+    if (paragraph.style.display === 'none') {
+        paragraph.style.display = 'block';
+    } else {
+        paragraph.style.display = 'none';
+    }
+}
+</script> -->
+
+<script>
+  function toggleParagraph(id) {
+      const paragraph = document.getElementById(id);
+      const toggleSign = paragraph.previousElementSibling.querySelector('.toggle-sign');
+
+      if (paragraph.classList.contains('show')) {
+          paragraph.classList.remove('show');
+          toggleSign.innerText = '+'
+          paragraph.classList.add('hide');
+      } else {
+          paragraph.classList.remove('hide'); 
+          toggleSign.innerText = '-'
+          paragraph.classList.add('show');
+      }
+  }
+</script>
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="/">
+        <img src="./images/cwwtechlogo.PNG" alt="" />
+      </a>
+
+      <nav class="nav-item">
+        <ul class="nav-list">
+          <li>
+            <a href="#">About us</a>
+          </li>
+          <li>
+            <a href="#">Contact us</a>
+          </li>
+          <li>
+            <a href="programmes.html">Programmes</a>
+          </li>
+          <li>
+            <a href="#">Log in</a>
+          </li>
+          <li>
+            <a href="#">Community</a>
+          </li>
+          <li>
+            <a href="#">Cart</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="cta-btn">Apply now</button>
+    </header>
+
+    <section class="page-title">
+      <h1 class="dashboard">Programmes</h1>
+    </section>
+
+    <section class="container">
+      <div class="featured">
+          <div>
+            <img src="/images/pic-6.jpg" alt="featured img">
+          </div>
+
+        <div class="featured-slide">
+            <h2>CTA Cohort programme</h2>
+              <p>This program is open to all youths in Africa between the age of 18-35. The program will equip the youths with Tech skills, soft skills and entrepreneurship training. 
+                It’s scheduled to hold for 6 weeks virtually. It is an instructor led training with 
+                practical classes and real life projects. Every trainee would have access to a mentor to guide them.
+              </p>
+            <button class="learn-btn">Learn More</button>
+                <h5>Applications for CTA Cohort 7.0 is ongoing!
+                  <a href="#"> Apply now</a>
+                </h5>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="featured">
+
+        <div class="featured-slide">
+            <h2>CTA Soft skills training</h2>
+            <button class="learn-btn">Learn More</button>
+        </div>
+
+        <div>
+          <img src="/images/pic-8.jpg" alt="featured img">
+        </div>
+      </div>
+    </section>
+      
+    
+    <section class="container">
+      <div class="featured">
+        <div>
+          <img src="/images/pic-1.jpg" alt="featured img">
+        </div>
+
+      <div class="featured-slide">
+          <h2>CTA Cohort programme</h2>
+            <p>This program is open to all youths in Africa between the age of 18-35. The program will equip the youths with Tech skills, soft skills and entrepreneurship training. 
+               It’s scheduled to hold for 6 weeks virtually. It is an instructor led training with 
+               practical classes and real life projects. Every trainee would have access to a mentor to guide them.
+            </p>
+           <button class="learn-btn">Learn More</button>
+              <h5>Applications for CTA Cohort 7.0 is ongoing!
+                 <a href="#"> Apply now</a>
+               </h5>
+      </div>
+      </div>
+    </section>
+
+    <section class="freq">
+      <div class="faq-main">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+          <div class="toggle-container">
+            <h5 class="toggle-text" onclick="toggleParagraph('paragraph1');">
+              How long is CWW Tech Africa program?</h5>
+            <div id="paragraph1" class="toggle-paragraph">
+              <p>The duration on the program. We currently have 3 cohort-based programmes.</p>
+              <ul class="toggle-list">
+                <li>CTA Cohort programmes -Duration of program is 6 weeks</li>
+                <li>CTA Bootcamp - 4 weeks</li>
+                <li>CTA Soft skills training - 2 days</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="toggle-container">
+            <h5 class="toggle-text" onclick="toggleParagraph('paragraph2');">
+              Is the program remote?
+            </h5>
+            <div id="paragraph2" class="toggle-paragraph">
+              <p>
+                CWW Tech Africa programs are virtual training programs that allow all participants,
+                regardless of location, to acttively participate.
+              </p>
+            </div>
+          </div>
+
+          <div class="toggle-container">
+              <h5 class="toggle-text" onclick="toggleParagraph('paragraph3');">How do i join CWW Tech Africa program?</h5>
+            <div id="paragraph3" class="toggle-paragraph">
+              <p>
+                To join any of our programs, click on "Apply as a trainee" on any of our programmes at 
+                wwww.cwwwtechafrica.com
+              </p>
+            </div>
+          </div>
+
+          <div class="toggle-container">
+            <h5 class="toggle-text" onclick="toggleParagraph('paragraph4');">
+              When will i be notified about the results of my application?
+            </h5>
+            <div id="paragraph4" class="toggle-paragraph">
+              <p>
+                CWW Tech Africa will contact all applicants through email in due course. All successful applicants will be notified
+              </p>
+            </div>
+          </div>
+
+          <div class="toggle-container">
+            <h5 class="toggle-text" onclick="toggleParagraph('paragraph5');">
+              Are CWW Tech Africa programmes open to undergraduate students?
+            </h5>
+            <div id="paragraph5" class="toggle-paragraph">
+              <p>
+                Yes, we encourage all students to apply.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="learn-btn | faq-btn">View FAQs</button>
+      </div>
+      
+    </section>
+
+    <section class="sub-footer">
+      <div class="s__footer">
+        <div>
+            <h3>ABOUT CTA</h3>
+              <ul class="footer-list">
+                <li>
+                  <a href="#">About us</a>
+                </li>
+                <li>
+                  <a href="#">Contact us</a>
+                </li>
+                <li>
+                  <a href="#">FAQs</a>
+                </li>
+                <li>
+                  <a href="#">Support</a>
+                </li>
+              </ul>
+        </div>
+        <div>
+            <h3>PARTNER WITH US</h3>
+            <ul class="footer-list">
+              <li>
+                <a href="#">Hire an intern</a>
+              </li>
+              <li>
+                <a href="#">Become an instructor</a>
+              </li>
+              <li>
+                <a href="#">CTA Business</a>
+              </li>
+              <li>
+                <a href="#">Community</a>
+              </li>
+            </ul>
+        </div>
+        <div>
+          <h3>QUICKLINKS</h3>
+          <ul class="footer-list">
+            <li>
+              <a href="#">Courses</a>
+            </li>
+            <li>
+              <a href="#">Programmes</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">Events</a>
+            </li>
+            <li>
+              <a href="#">Referrals</a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </section>
+
+    <footer>
+      <p>Copyright &copy 2023 CWW Tech Africa</p>
+    </footer>
+
+    
+  </body>
+</html>
