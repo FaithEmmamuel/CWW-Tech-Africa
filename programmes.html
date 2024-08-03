@@ -6,30 +6,15 @@
     <link rel="stylesheet" href="./css/prog.css" />
     <title>CWW Tech Login Page</title>
 
-    <!-- <script>
-function toggleParagraph(paragraphId) {
-    const paragraph = document.getElementById(paragraphId);
-    
-    if (paragraph.style.display === 'none') {
-        paragraph.style.display = 'block';
-    } else {
-        paragraph.style.display = 'none';
-    }
-}
-</script> -->
-
 <script>
   function toggleParagraph(id) {
       const paragraph = document.getElementById(id);
-      const toggleSign = paragraph.previousElementSibling.querySelector('.toggle-sign');
 
       if (paragraph.classList.contains('show')) {
           paragraph.classList.remove('show');
-          toggleSign.innerText = '+'
           paragraph.classList.add('hide');
       } else {
           paragraph.classList.remove('hide'); 
-          toggleSign.innerText = '-'
           paragraph.classList.add('show');
       }
   }
@@ -74,7 +59,7 @@ function toggleParagraph(paragraphId) {
     <section class="container">
       <div class="featured">
           <div>
-            <img src="/images/pic-6.jpg" alt="featured img">
+            <img src="./images/pic-6.jpg" alt="featured img">
           </div>
 
         <div class="featured-slide">
@@ -100,7 +85,7 @@ function toggleParagraph(paragraphId) {
         </div>
 
         <div>
-          <img src="/images/pic-8.jpg" alt="featured img">
+          <img src="./images/pic-8.jpg" alt="featured img">
         </div>
       </div>
     </section>
@@ -109,7 +94,7 @@ function toggleParagraph(paragraphId) {
     <section class="container">
       <div class="featured">
         <div>
-          <img src="/images/pic-1.jpg" alt="featured img">
+          <img src="./images/pic-1.jpg" alt="featured img">
         </div>
 
       <div class="featured-slide">
@@ -255,7 +240,6 @@ function toggleParagraph(paragraphId) {
     <footer>
       <p>Copyright &copy 2023 CWW Tech Africa</p>
     </footer>
-
     
   </body>
 </html>
